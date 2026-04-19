@@ -15,11 +15,11 @@ body {
 }
 
 h1 {
-  font-size: 10px;
+  font-size: 20px;
 }
 
 #container {
-  margin-top: 10px;
+  margin-top: 30px;
   display: flex;
   justify-content: center;
 }
@@ -183,14 +183,21 @@ function girar() {
 
     tempo++;
 
-    if (tempo > 20) {
-      clearInterval(intervalo);
-
-      bola.innerText = final;
-      bola.className = "bola " + cor(final);
-
-      girando = false;
-    }
+      if (tempo > 20) {
+        clearInterval(intervalo);
+      
+        bola.innerText = final;
+        bola.className = "bola " + cor(final);
+      
+        // ✨ BRILHO AQUI
+        bola.classList.add("brilho");
+      
+        setTimeout(() => {
+          bola.classList.remove("brilho");
+        }, 2500);
+      
+        girando = false;
+      }
 
   }, 60);
 }
