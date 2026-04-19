@@ -34,11 +34,20 @@ h1 {
   font-size: 250px;
   font-weight: bold;
   color: white;
+box-shadow: inset -10px -10px 20px rgba(0,0,0,0.5),
+            inset 10px 10px 20px rgba(255,255,255,0.1);  
 }
 
-.vermelho { background: red; }
-.preto { background: radial-gradient(circle, #444847, #636766); }
+.vermelho {
+  background: radial-gradient(circle at 30% 30%, #ff6666, #b30000);
+}
 
+.preto {
+  background: radial-gradient(circle at 30% 30%, #666, #000);
+  border: 4px solid white;
+}
+
+  
 #tempo {
   margin-top: 150px;
   margin-botton: 70px;
