@@ -122,6 +122,15 @@ input {
 .btn:active {
   background: #d4af37;
 }
+
+button {
+  font-size: 30px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background: red;
+  color: white;
+}
+  
 </style>
 </head>
 
@@ -312,6 +321,7 @@ botao.addEventListener("pointerleave", () => {
 
 function fecharApp() {
   window.close();
+  window.history.back();
 }
   
 </script>
