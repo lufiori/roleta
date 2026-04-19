@@ -128,7 +128,7 @@ input {
 <body>
 
 <h1> </h1>
-
+<button onclick="fecharApp()">❌ Fechar</button>
 <div id="container">
   <div id="bola" class="bola">-</div>
 </div>
@@ -309,6 +309,11 @@ botao.addEventListener("pointerleave", () => {
   clearTimeout(tempoPressionado);
   botao.classList.remove("segurar");
 });
+
+function fecharApp() {
+  window.close();
+}
+  
 </script>
 
 </body>
